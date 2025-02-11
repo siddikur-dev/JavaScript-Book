@@ -246,6 +246,21 @@ console.log(newPerson);
 
 ---
 
+## **📌 JavaScript Condition Methods (শর্তমূলক স্টেটমেন্ট) - Table Format**  
+
+| শর্ত | বর্ণনা | সিনট্যাক্স | উদাহরণ | আউটপুট |
+|-------|-----------------|--------------------|----------------------|----------|
+| `if` | শর্ত সত্য হলে কোড চলবে | `if(condition) { code }` | ```javascript if (10 > 5) { console.log("True"); } ``` | `"True"` |
+| `if-else` | শর্ত সত্য হলে `if` ব্লক চলবে, নাহলে `else` ব্লক | `if(condition) { code } else { code }` | ```javascript let age = 16; if (age >= 18) { console.log("Adult"); } else { console.log("Underage"); } ``` | `"Underage"` |
+| `if-else if-else` | একাধিক শর্ত চেক করার জন্য ব্যবহার হয় | `if(condition1) { } else if(condition2) { } else { }` | ```javascript let marks = 75; if (marks >= 80) { console.log("A+"); } else if (marks >= 60) { console.log("B"); } else { console.log("Fail"); } ``` | `"B"` |
+| `switch-case` | একাধিক নির্দিষ্ট মান চেক করতে ব্যবহার হয় | `switch(value) { case x: code; break; default: code; }` | ```javascript let day = 3; switch (day) { case 1: console.log("Sunday"); break; case 2: console.log("Monday"); break; case 3: console.log("Tuesday"); break; default: console.log("Invalid Day"); } ``` | `"Tuesday"` |
+| `ternary operator` | ছোট আকারে `if-else` লেখার জন্য ব্যবহৃত হয় | `condition ? trueValue : falseValue` | ```javascript let age = 20; let status = (age >= 18) ? "Adult" : "Minor"; console.log(status); ``` | `"Adult"` |
+| `logical AND (&&)` | দুই শর্ত সত্য হলে সত্য রিটার্ন করবে | `condition1 && condition2` | ```javascript let x = 5; if (x > 0 && x < 10) { console.log("Between 0 and 10"); } ``` | `"Between 0 and 10"` |
+| `logical OR (||)` | যেকোনো একটি শর্ত সত্য হলে সত্য রিটার্ন করবে | `condition1 || condition2` | ```javascript let y = 15; if (y < 10 || y > 20) { console.log("Out of range"); } ``` | `"Out of range"` |
+| `logical NOT (!)` | শর্তের বিপরীত মান ফেরত দেয় | `!condition` | ```javascript let isRaining = false; if (!isRaining) { console.log("Go outside!"); } ``` | `"Go outside!"` |
+
+---
+
 ## **📌 উপসংহার (Summary)**
 ✅ **JavaScript Object হলো key-value pair ডাটা স্টোর করার একটি শক্তিশালী উপায়।**  
 ✅ **Dot Notation (`obj.property`) এবং Bracket Notation (`obj["property"]`) দিয়ে প্রপার্টি অ্যাক্সেস করা যায়।**  
