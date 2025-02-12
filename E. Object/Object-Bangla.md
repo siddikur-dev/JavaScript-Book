@@ -246,18 +246,22 @@ console.log(newPerson);
 
 ---
 
-## **📌 JavaScript Condition Methods (শর্তমূলক স্টেটমেন্ট) - Table Format**  
+নিচে JavaScript-এ Object Methods-এর তালিকা (table format) দেওয়া হলো:
 
-| শর্ত | বর্ণনা | সিনট্যাক্স | উদাহরণ | আউটপুট |
-|-------|-----------------|--------------------|----------------------|----------|
-| `if` | শর্ত সত্য হলে কোড চলবে | `if(condition) { code }` | ```javascript if (10 > 5) { console.log("True"); } ``` | `"True"` |
-| `if-else` | শর্ত সত্য হলে `if` ব্লক চলবে, নাহলে `else` ব্লক | `if(condition) { code } else { code }` | ```javascript let age = 16; if (age >= 18) { console.log("Adult"); } else { console.log("Underage"); } ``` | `"Underage"` |
-| `if-else if-else` | একাধিক শর্ত চেক করার জন্য ব্যবহার হয় | `if(condition1) { } else if(condition2) { } else { }` | ```javascript let marks = 75; if (marks >= 80) { console.log("A+"); } else if (marks >= 60) { console.log("B"); } else { console.log("Fail"); } ``` | `"B"` |
-| `switch-case` | একাধিক নির্দিষ্ট মান চেক করতে ব্যবহার হয় | `switch(value) { case x: code; break; default: code; }` | ```javascript let day = 3; switch (day) { case 1: console.log("Sunday"); break; case 2: console.log("Monday"); break; case 3: console.log("Tuesday"); break; default: console.log("Invalid Day"); } ``` | `"Tuesday"` |
-| `ternary operator` | ছোট আকারে `if-else` লেখার জন্য ব্যবহৃত হয় | `condition ? trueValue : falseValue` | ```javascript let age = 20; let status = (age >= 18) ? "Adult" : "Minor"; console.log(status); ``` | `"Adult"` |
-| `logical AND (&&)` | দুই শর্ত সত্য হলে সত্য রিটার্ন করবে | `condition1 && condition2` | ```javascript let x = 5; if (x > 0 && x < 10) { console.log("Between 0 and 10"); } ``` | `"Between 0 and 10"` |
-| `logical OR (||)` | যেকোনো একটি শর্ত সত্য হলে সত্য রিটার্ন করবে | `condition1 || condition2` | ```javascript let y = 15; if (y < 10 || y > 20) { console.log("Out of range"); } ``` | `"Out of range"` |
-| `logical NOT (!)` | শর্তের বিপরীত মান ফেরত দেয় | `!condition` | ```javascript let isRaining = false; if (!isRaining) { console.log("Go outside!"); } ``` | `"Go outside!"` |
+| **Method Name**           | **Description**                                                                 | **Example**                                                                                   |
+|---------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| `Object.keys()`            | একটি অবজেক্টের সব কী (properties) কে অ্যারেতে রিটার্ন করে।                      | `Object.keys({name: 'John', age: 30})` → `['name', 'age']`                                  |
+| `Object.values()`          | একটি অবজেক্টের সব ভ্যালু (properties values) কে অ্যারেতে রিটার্ন করে।           | `Object.values({name: 'John', age: 30})` → `['John', 30]`                                  |
+| `Object.entries()`         | একটি অবজেক্টের [key, value] পেয়ারকে অ্যারেতে রিটার্ন করে।                       | `Object.entries({name: 'John', age: 30})` → `[['name', 'John'], ['age', 30]]`               |
+| `Object.assign()`          | একটি বা একাধিক অবজেক্টের মান কপি করে, অন্য একটি অবজেক্টে যুক্ত করে।             | `Object.assign({}, {name: 'John'}, {age: 30})` → `{name: 'John', age: 30}`                   |
+| `Object.hasOwnProperty()`  | একটি অবজেক্টের নির্দিষ্ট কী (property) আছে কিনা তা চেক করে।                     | `const obj = {name: 'John'}; obj.hasOwnProperty('name')` → `true`                            |
+| `Object.is()`              | দুটি অবজেক্ট বা ভ্যালুর সমতা চেক করে (strict equality)।                          | `Object.is(1, 1)` → `true` <br> `Object.is(1, '1')` → `false`                               |
+| `Object.freeze()`          | একটি অবজেক্টকে সম্পূর্ণভাবে পরিবর্তন থেকে রক্ষা করে (immutable বানায়)।          | `const obj = {name: 'John'}; Object.freeze(obj); obj.name = 'Doe';` → `{name: 'John'}`       |
+| `Object.seal()`            | একটি অবজেক্টে নতুন প্রপার্টি যোগ করা থেকে বিরত রাখে, তবে বিদ্যমান প্রপার্টি আপডেট করা যায়। | `const obj = {name: 'John'}; Object.seal(obj); obj.age = 30;` → `{name: 'John'}`             |
+| `Object.create()`          | একটি নতুন অবজেক্ট তৈরি করে, তার prototype একটি নির্দিষ্ট অবজেক্ট হতে পারে।    | `const obj = Object.create({greet: 'hello'}); console.log(obj.greet);` → `hello`              |
+| `Object.prototype.toString()` | অবজেক্টের স্ট্রিং রেপ্রেজেন্টেশন রিটার্ন করে।                                    | `const obj = {}; console.log(obj.toString())` → `"[object Object]"`                         |
+| `Object.prototype.valueOf()` | অবজেক্টের মৌলিক মান রিটার্ন করে (default: নিজে থেকে `this`)।                   | `const obj = {x: 10}; console.log(obj.valueOf())` → `{x: 10}`                                 |
+
 
 ---
 
