@@ -221,6 +221,8 @@ document.getElementById("btn").removeEventListener("click", showMessage);
 
 ---
 
+
+
 # 🚀 **JavaScript Event Handling: Bubbling vs Delegation**  
 
 JavaScript-এ ইভেন্ট হ্যান্ডলিং করার সময় **Event Bubbling, Capturing এবং Delegation** গুরুত্বপূর্ণ বিষয়।  
