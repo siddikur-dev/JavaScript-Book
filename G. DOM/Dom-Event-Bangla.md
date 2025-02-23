@@ -219,9 +219,9 @@ document.getElementById("btn").removeEventListener("click", showMessage);
 ✅ **`click, mouseover, keydown, submit, change` ইত্যাদি ইভেন্ট গুরুত্বপূর্ণ**।  
 ✅ **`removeEventListener()` দিয়ে ইভেন্ট বন্ধ করা যায়**।  
 
+
+
 ---
-
-
 
 # 🚀 **JavaScript Event Handling: Bubbling vs Delegation**  
 
