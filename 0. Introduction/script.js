@@ -29,3 +29,25 @@ const mobile = {
     isNew: true,
     price: '50K'
 }
+
+// function 
+function sum(x, y) {
+    addition = x + y;
+    subtraction = x - y;
+    multiplication = x * y;
+    division = x / y;
+    modulus = x % y;
+    const results = ` Addition: ${addition} subtraction: ${subtraction} multiplication: ${multiplication} division: ${division} modulus:${modulus}`;
+    return results;
+}
+// const number = (50, 30);
+const result = sum(5, 3)
+console.log(result);
+
+// Dom Document Object Model
+document.getElementById('btn').addEventListener('click', function () {
+    document.body.style.backgroundColor = 'blue';
+})
+document.getElementById('btn').addEventListener('mouseover', function () {
+    document.body.style.backgroundColor = 'red'
+});
